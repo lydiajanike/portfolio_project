@@ -10,21 +10,18 @@
 </head>
 <body>
     <header>
-        <div class="header-titles"></div>
             <h1>Lydia Janike</h1>
-            <h2>Front-End Engineer</h2>
-        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class = "about">
-        <div class = "about-photo-wrapper">
+    <div class="about" id="about">
+        <div class="about-photo-wrapper">
             <img src="img_3621.jpg" alt="Lydia Janike" class="profile-image">
         </div>
         <div class = "about-text">
@@ -33,14 +30,25 @@
             <p>a passionate web developer, artist and designer with a love for creating beautiful things - whether that is achieved with a paintbrush, drawing tablet or keyboard. </p>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
         <h3>My Projects</h3>
-        <ul>
-            <li><a href="project1.html">Project 1: Portfolio Website</a></li>
-            <li><a href="project2.html">Project 2: E-commerce Site</a></li>
-            <li><a href="project3.html">Project 3: Blog Platform</a></li>
-        </ul>
-
+        <div class="project-cards">
+            <div class="project-card">
+                <h4>Portfolio Website</h4>
+             <p>A personal portfolio to showcase my work and skills.</p>
+                <a href="project1.html">View Project</a>
+          </div>
+            <div class="project-card">
+                <h4>Instagram</h4>
+                <p>An online feed displaying my original art works.</p>
+                <a href="project2.html">View Page</a>
+            </div>
+            <div class="project-card">
+                <h4>Etsy shop</h4>
+                <p>My small business selling art.</p>
+                <a href="project3.html">View Shop</a>
+            </div>
+        </div>
     </div>
     <footer>
      <p>&copy; 2025 Lydia Janike.</p>

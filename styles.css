@@ -17,9 +17,9 @@
 body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    margin: 10px;
     padding: 0;
     color: #1f2421ff;
+    margin: 0;
     background-color: #f0d1b5ff;
 }
 
@@ -40,7 +40,7 @@ nav a {
 h1 {
     font-family: "Crimson Text", serif;
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -62,13 +62,14 @@ header {
     position: relative; /* Needed for absolute positioning of the overlay */
     background: #216869ff;
     background-size: cover;
-    background-position: 20% 20%;
-    height: 260px;
-    overflow: hidden; /* Ensures overlay doesn't spill out */
-    border: #1f2421ff 2px solid;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
-header h1, header h2 {
+header h1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -79,12 +80,7 @@ header h1, header h2 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-header h1 {
-    padding-top: 30px; /* Adjust as needed */
-}
-
 header nav {
-    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -102,7 +98,6 @@ header nav ul {
     flex-direction: row;
     padding: 0;
     margin: 0;
-    height: 40px;
 }
 
 nav ul li {
@@ -168,4 +163,79 @@ nav ul li:last-child {
     object-fit: cover;
     border-radius: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 10rem;
+}
+
+.projects h3 {
+    font-size: 2rem;
+}
+
+.project-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-card {
+    background: #49a078ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(33, 104, 105, 0.12);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 0;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.project-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #f0d1b5ff;
+}
+
+.project-card p {
+    flex: 1;
+    margin-bottom: 1rem;
+    color: #1f2421ff;
+}
+
+.project-card a {
+    color: #f0d1b5ff;
+    background: #b47090ff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.project-card a:hover {
+    background: #216869ff;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(33, 104, 105, 0.18);
+}
+
+/* Footer */
+footer {
+    background-color: #216869ff;
+    color: #f0d1b5ff;
+    text-align: center;
+    padding: 10px;
 }
