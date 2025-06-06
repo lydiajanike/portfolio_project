@@ -1,0 +1,111 @@
+/*Crimson Text*/
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Lato*/
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* General Styles */
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+    color: #1f2421ff;
+    background-color: #f0d1b5ff;
+}
+
+h1, h2, h3 {
+    color: #1f2421ff;
+}
+
+a {
+    color: #f0d1b5ff;
+}
+
+h1 {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+header {
+    position: relative; /* Needed for absolute positioning of the overlay */
+    background: #216869ff;
+    background-size: cover;
+    background-position: 20% 20%;
+    height: 260px;
+    overflow: hidden; /* Ensures overlay doesn't spill out */
+    border: #1f2421ff 2px solid;
+}
+
+
+header h1, header h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0d1b5ff;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    padding-top: 30px; /* Adjust as needed */
+}
+
+header nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px; /* Match overlay height */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+header nav ul {
+    position: static; /* Remove absolute */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    list-style: none;
+    font-size: 1.2rem;
+    border-left: 1px solid #f0d1b5ff; /* Add left border */
+    padding-left: 15px; /* Add padding to the left of the text */
+}
+
+nav ul li:last-child {
+    border-right: 1px solid #f0d1b5ff; /* Add right border to the last item */
+    padding-right: 15px;
+}
