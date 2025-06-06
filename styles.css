@@ -28,8 +28,14 @@ h1, h2, h3 {
 }
 
 a {
+    color: #216869ff;
+}
+
+nav a {
     color: #f0d1b5ff;
 }
+
+
 
 h1 {
     font-family: "Crimson Text", serif;
@@ -40,7 +46,7 @@ h1 {
 h2 {
     font-family: "Crimson Text", serif;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -49,6 +55,9 @@ h3 {
     font-size: 1.5rem;
 }
 
+
+
+/* Header Styles */
 header {
     position: relative; /* Needed for absolute positioning of the overlay */
     background: #216869ff;
@@ -58,7 +67,6 @@ header {
     overflow: hidden; /* Ensures overlay doesn't spill out */
     border: #1f2421ff 2px solid;
 }
-
 
 header h1, header h2 {
     position: relative;
@@ -100,7 +108,7 @@ header nav ul {
 nav ul li {
     margin: 0 15px;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-left: 1px solid #f0d1b5ff; /* Add left border */
     padding-left: 15px; /* Add padding to the left of the text */
 }
@@ -108,4 +116,56 @@ nav ul li {
 nav ul li:last-child {
     border-right: 1px solid #f0d1b5ff; /* Add right border to the last item */
     padding-right: 15px;
+}
+
+/*About Section*/
+.about {
+    display: flex;
+    gap: 3rem;
+    margin: 5rem 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-divider {
+    width: 220px;
+    height: 3px;
+    background: #b47090ff; 
+}
+
+.name {
+    font-size: 2.5rem;
+}
+
+.about-photo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.about-photo-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;      /* Move up */
+    left: -20px;     /* Move left */
+    width: 100%;
+    height: 100%;
+    background: #b47090ff; /* Your chosen color */
+    border-radius: 10%;  /* Match the image's border-radius */
+    z-index: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.profile-image {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
