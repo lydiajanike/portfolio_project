@@ -274,6 +274,7 @@ nav ul li:last-child {
   transform: none;
   display: inline-block;
   vertical-align: middle;
+  padding: 10px;
 }
 
 /* Center the controls below the slideshow */
@@ -286,9 +287,23 @@ nav ul li:last-child {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #49a078ff;
   cursor: pointer;
 }
+
+/*Contact Section*/
+.contact h3 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 10rem;
+}
+
 
 /* Footer */
 footer {

@@ -16,7 +16,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -52,28 +52,34 @@
         <div class="slideshow">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="pictures/Blowing Bubbles.jpg" alt="Kids blowings bubbles" class="slideshow-image">
+                    <img src="pictures/Blowing Bubbles.jpg" alt="Kids blowings bubbles" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="Pictures/Colourful flowersss.jpg" alt="Colourful Flowers" class="slideshow-image">
+                    <img src="Pictures/Colourful flowersss.jpg" alt="Colourful Flowers" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/Freckles in the sun.jpg" alt="Enjoying the sun" class="slideshow-image">
+                    <img src="pictures/Freckles in the sun.jpg" alt="Enjoying the sun" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/Funky chick.jpg" alt="Funky Chicken" class="slideshow-image">
+                    <img src="pictures/Funky chick.jpg" alt="Funky Chicken" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/Orange flowers.jpg" alt="Orange Flowers" class="slideshow-image">
+                    <img src="pictures/Orange flowers.jpg" alt="Orange Flowers" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/puppy.jpg" alt="Puppy" class="slideshow-image">
+                    <img src="pictures/puppy.jpg" alt="Puppy" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/kingfisher.jpg" alt="Kingfisher" class="slideshow-image">
+                    <img src="pictures/kingfisher.jpg" alt="Kingfisher" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/parrot.jpg" alt="Parrot" class="slideshow-image">
+                    <img src="pictures/parrot.jpg" alt="Parrot" class="slideshow-image" loading="lazy">
+                </div>
+                <div class="mySlides fade">
+                    <img src="pictures/woman in red.jpg" alt="woman in red" class="slideshow-image" loading="lazy">   
+                </div>
+                <div class="mySlides fade">
+                    <img src="pictures/ladybug on a toadstool.jpg" alt="Ladybug on a toadstool" class="slideshow-image" loading="lazy">
                 </div>
             </div>
             <div class="slideshow-controls">
@@ -81,6 +87,10 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
+    </div>
+    <div class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <p>If you would like to get in touch, please email me at <a href="mailto:lydiajanike@gmail.com">lydiajanike@gmail.com</a>
     </div>
     <footer>
      <p>&copy; 2025 Lydia Janike.</p>
@@ -96,7 +106,7 @@ function plusSlides(n) {
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("mySlides");
-  const slidesToShow = 5; // Number of images to show at once
+  const slidesToShow = 4; // Number of images to show at once
   if (slides.length === 0) return;
   if (n > slides.length - slidesToShow + 1) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length - slidesToShow + 1}
