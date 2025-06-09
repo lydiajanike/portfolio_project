@@ -246,6 +246,50 @@ nav ul li:last-child {
     box-shadow: 0 8px 24px rgba(33, 104, 105, 0.18);
 }
 
+
+/*Slideshow*/
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1.5rem;
+    margin: 2rem 0; 
+}
+
+.slideshow-image {
+    width: 250px;    /* Adjust as needed */
+    height: 180px;   /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(33,104,105,0.12);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: static;
+  margin: 0 1rem;
+  top: auto;
+  left: auto;
+  right: auto;
+  transform: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Center the controls below the slideshow */
+.slideshow-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
     background-color: #216869ff;
