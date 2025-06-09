@@ -70,7 +70,7 @@
                     <img src="pictures/puppy.jpg" alt="Puppy" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
-                    <img src="pictures/kingfisher.jpg" alt="Kingfisher" class="slideshow-image" loading="lazy">
+                    <img src="pictures/blueberries.jpg" alt="Blueberries" class="slideshow-image" loading="lazy">
                 </div>
                 <div class="mySlides fade">
                     <img src="pictures/parrot.jpg" alt="Parrot" class="slideshow-image" loading="lazy">
@@ -106,19 +106,27 @@ function plusSlides(n) {
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("mySlides");
-  const slidesToShow = 4; // Number of images to show at once
-  if (slides.length === 0) return;
-  if (n > slides.length - slidesToShow + 1) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length - slidesToShow + 1}
-  for (let i = 0; i < slides.length; i++) {
+  // Use 3 images on small screens, 4 on larger screens
+  const slidesToShow = window.innerWidth <= 768 ? 2 : 4;
+  const total = slides.length;
+  if (total === 0) return;
+
+  // Looping logic
+  if (n > total - slidesToShow + 1) { slideIndex = 1; }
+  if (n < 1) { slideIndex = total - slidesToShow + 1; }
+
+  for (let i = 0; i < total; i++) {
     slides[i].style.display = "none";
   }
   for (let i = 0; i < slidesToShow; i++) {
-    if (slideIndex + i - 1 < slides.length) {
+    if (slideIndex + i - 1 < total) {
       slides[slideIndex + i - 1].style.display = "block";
     }
   }
 }
+
+// Recalculate on resize
+window.addEventListener('resize', () => showSlides(slideIndex));
 </script>
 </body>
 </html>
